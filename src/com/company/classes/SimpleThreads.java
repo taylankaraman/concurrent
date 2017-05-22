@@ -1,4 +1,4 @@
-package com.company;
+package com.company.classes;
 
 /**
  * Created by taylan.karaman on 18-May-17.
@@ -23,13 +23,11 @@ public class SimpleThreads {
                     "A kid will eat ivy too"
             };
             try {
-                for (int i = 0;
-                     i < importantInfo.length;
-                     i++) {
+                for (String anImportantInfo : importantInfo) {
                     // Pause for 4 seconds
                     Thread.sleep(4000);
                     // Print a message
-                    threadMessage(importantInfo[i]);
+                    threadMessage(anImportantInfo);
                 }
             } catch (InterruptedException e) {
                 threadMessage("I wasn't done!");

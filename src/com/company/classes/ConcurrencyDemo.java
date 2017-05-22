@@ -1,6 +1,6 @@
-package com.company;
+package com.company.classes;
 
-import static com.company.SimpleThreads.threadMessage;
+import static com.company.classes.SimpleThreads.threadMessage;
 
 class Thread1 extends Thread{
     public void run(){
@@ -57,6 +57,7 @@ public class ConcurrencyDemo{
         t4.start();
         */
 
+        /*
         // Use the classes from SimpleThreads class
 
         // Delay, in milliseconds before
@@ -100,5 +101,11 @@ public class ConcurrencyDemo{
             }
         }
         threadMessage("Finally!");
+        */
+
+//        MountainBicycle mnt = new MountainBicycle();
+//        mnt.speedUp(20);
+//        mnt.printStates();
+
     }
 }
